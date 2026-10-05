@@ -1,0 +1,129 @@
+Symbols in portfolio: AAPL, MSFT, GOOGL, AMZN, NVDA
+  AAPL    456 rows  2025-01-01 to 2026-09-30  [SIMULATED (offline fallback)]
+  MSFT    456 rows  2025-01-01 to 2026-09-30  [SIMULATED (offline fallback)]
+  GOOGL   456 rows  2025-01-01 to 2026-09-30  [SIMULATED (offline fallback)]
+  AMZN    456 rows  2025-01-01 to 2026-09-30  [SIMULATED (offline fallback)]
+  NVDA    456 rows  2025-01-01 to 2026-09-30  [SIMULATED (offline fallback)]
+Warning messages:
+1: Download failed for AAPL (Unable to import "AAPL".
+CONNECT tunnel failed, response 403). Using SIMULATED data instead. 
+2: Download failed for MSFT (Unable to import "MSFT".
+CONNECT tunnel failed, response 403). Using SIMULATED data instead. 
+3: Download failed for GOOGL (Unable to import "GOOGL".
+CONNECT tunnel failed, response 403). Using SIMULATED data instead. 
+4: Download failed for AMZN (Unable to import "AMZN".
+CONNECT tunnel failed, response 403). Using SIMULATED data instead. 
+5: Download failed for NVDA (Unable to import "NVDA".
+CONNECT tunnel failed, response 403). Using SIMULATED data instead. 
+[1] "AAPL_df"   "AMZN_df"   "GOOGL_df"  "MSFT_df"   "NVDA_df"   "xts_to_df"
+'data.frame':	456 obs. of  7 variables:
+ $ Date    : Date, format: "2025-01-01" "2025-01-02" ...
+ $ Open    : num  185 181 181 180 188 ...
+ $ High    : num  186 183 181 187 189 ...
+ $ Low     : num  180 181 179 180 183 ...
+ $ Close   : num  181 182 181 187 184 ...
+ $ Volume  : num  81698838 32235056 57493619 35775777 40714883 ...
+ $ Adjusted: num  181 182 181 187 184 ...
+ - attr(*, "symbol")= chr "AAPL"
+ - attr(*, "source")= chr "SIMULATED (offline fallback)"
+
+AAPL  144.36   -2.14 (-1.46%)   as of 2026-09-30
+ Field            Value          
+ Previous Close   146.50         
+ Open             146.25         
+ Day's Range      143.91 - 146.74
+ 52 Week Range    142.69 - 254.61
+ Volume           51,355,339     
+ Avg. Volume (3M) 39,827,618     
+
+===== AAPL : historical prices (SIMULATED (offline fallback)) =====
+       Date   Open   High    Low  Close Adjusted     Volume
+ 2026-09-30 146.25 146.74 143.91 144.36   144.36 51,355,339
+ 2026-09-29 144.16 147.36 142.69 146.50   146.50 33,795,027
+ 2026-09-28 146.80 147.55 143.46 143.67   143.67 27,029,783
+ 2026-09-25 149.06 149.06 145.65 146.50   146.50 64,423,310
+ 2026-09-24 145.64 150.74 143.92 150.14   150.14 69,917,691
+
+MSFT  253.52   +5.24 (+2.11%)   as of 2026-09-30
+ Field            Value          
+ Previous Close   248.28         
+ Open             247.89         
+ Day's Range      245.69 - 254.40
+ 52 Week Range    221.26 - 373.18
+ Volume           38,715,595     
+ Avg. Volume (3M) 42,427,863     
+
+===== MSFT : historical prices (SIMULATED (offline fallback)) =====
+       Date   Open   High    Low  Close Adjusted     Volume
+ 2026-09-30 247.89 254.40 245.69 253.52   253.52 38,715,595
+ 2026-09-29 247.74 249.05 247.45 248.28   248.28 28,295,604
+ 2026-09-28 243.43 247.84 241.79 247.05   247.05 24,330,478
+ 2026-09-25 240.71 244.11 239.97 243.65   243.65 52,474,949
+ 2026-09-24 240.26 241.54 238.02 239.80   239.80 58,749,801
+
+GOOGL  127.42   -1.50 (-1.16%)   as of 2026-09-30
+ Field            Value          
+ Previous Close   128.92         
+ Open             128.64         
+ Day's Range      126.97 - 128.69
+ 52 Week Range    78.78 - 132.27 
+ Volume           34,190,015     
+ Avg. Volume (3M) 40,885,445     
+
+===== GOOGL : historical prices (SIMULATED (offline fallback)) =====
+       Date   Open   High    Low  Close Adjusted     Volume
+ 2026-09-30 128.64 128.69 126.97 127.42   127.42 34,190,015
+ 2026-09-29 130.31 130.41 128.01 128.92   128.92 38,997,088
+ 2026-09-28 130.87 131.56 129.55 130.58   130.58 38,519,400
+ 2026-09-25 131.84 132.27 128.27 130.03   130.03 41,071,729
+ 2026-09-24 128.69 132.15 128.47 131.70   131.70 45,381,643
+
+AMZN  150.77   +1.92 (+1.29%)   as of 2026-09-30
+ Field            Value          
+ Previous Close   148.85         
+ Open             149.85         
+ Day's Range      148.17 - 151.18
+ 52 Week Range    132.10 - 187.84
+ Volume           22,439,564     
+ Avg. Volume (3M) 42,649,236     
+
+===== AMZN : historical prices (SIMULATED (offline fallback)) =====
+       Date   Open   High    Low  Close Adjusted     Volume
+ 2026-09-30 149.85 151.18 148.17 150.77   150.77 22,439,564
+ 2026-09-29 147.59 148.96 145.41 148.85   148.85 23,705,641
+ 2026-09-28 146.44 146.87 145.29 146.62   146.62 55,241,405
+ 2026-09-25 150.08 150.81 146.41 147.02   147.02 42,038,001
+ 2026-09-24 146.08 149.37 144.85 148.63   148.63 27,324,892
+
+NVDA  70.22   +1.52 (+2.21%)   as of 2026-09-30
+ Field            Value        
+ Previous Close   68.70        
+ Open             68.85        
+ Day's Range      68.78 - 71.41
+ 52 Week Range    46.38 - 87.41
+ Volume           43,391,198   
+ Avg. Volume (3M) 43,098,046   
+
+===== NVDA : historical prices (SIMULATED (offline fallback)) =====
+       Date  Open  High   Low Close Adjusted     Volume
+ 2026-09-30 68.85 71.41 68.78 70.22    70.22 43,391,198
+ 2026-09-29 68.21 68.76 67.57 68.70    68.70 46,346,458
+ 2026-09-28 69.00 69.14 67.97 68.59    68.59 45,873,732
+ 2026-09-25 69.51 70.36 67.69 68.63    68.63 43,401,952
+ 2026-09-24 70.46 70.53 68.61 69.11    69.11 51,751,278
+
+===== Portfolio statistics (Close price) =====
+ Symbol Observations Last_Close   Mean Median Mode Std_Dev MA_Short_Latest
+   AAPL          456     144.36 224.53 213.82  207   35.41          159.98
+   MSFT          456     253.52 316.98 324.48  253   50.95          243.07
+  GOOGL          456     127.42 117.45 111.10   93   21.35          123.40
+   AMZN          456     150.77 152.65 150.99  139   13.59          147.01
+   NVDA          456      70.22  56.86  52.40   43   13.97           69.11
+ MA_Long_Latest Volatility_pct
+         169.69           1.72
+         244.83           1.64
+         112.96           1.72
+         143.74           1.77
+          74.84           1.80
+
+Done. Charts and statistics written to /home/claude/work/A2/TechnicalAnalysis/Assignment2/output 
