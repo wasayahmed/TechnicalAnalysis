@@ -1,0 +1,85 @@
+
+=== Examples from the assignment brief ===
+sma(data, 3):
+[1] 12.3333 15.6667 17.6667 20.0000 21.6667 23.6667 23.3333
+ema(data, 3):
+[1] 10.0000 11.0000 13.0000 16.5000 17.2500 19.6250 22.3125 23.1562 22.0781
+macd(100..130, 3, 5, 2):
+$macd_line
+[1] 0.0000 0.8333 1.8056 2.6620 3.3372 3.8394 4.2002
+
+$signal_line
+[1] 0.0000 0.5556 1.3889 2.2377 2.9707 3.5498 3.9834
+
+$histogram
+[1] 0.0000 0.2778 0.4167 0.4244 0.3665 0.2896 0.2168
+
+stdev(data):
+[1] 4.9466
+rsi(c(45,...,62), 5):
+ [1]    NA    NA    NA    NA    NA 60.00 74.40 76.73 81.88 70.22
+stoch_rsi(10 points, 14, 3, 3): (not enough data -> NA, with a warning)
+$k_line
+ [1] NA NA NA NA NA NA NA NA NA NA
+
+$d_line
+ [1] NA NA NA NA NA NA NA NA NA NA
+
+crossover(arr1, arr2):
+[1] FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE
+crossunder(arr1, arr2):
+[1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+
+=== SMA ===
+[PASS] SMA hand values (period 3)
+[PASS] SMA length = n - period + 1
+[PASS] SMA period 1 returns the data
+[PASS] SMA errors when data shorter than period
+[PASS] SMA matches TTR::SMA
+
+=== EMA ===
+[PASS] EMA hand values (period 3)
+[PASS] EMA matches stats::filter recursion
+[PASS] EMA of a constant is constant
+
+=== MACD ===
+[PASS] MACD returns 3 named components
+[PASS] MACD line = EMA12 - EMA26
+[PASS] Histogram = MACD - signal
+[PASS] MACD errors if short >= long
+
+=== Standard deviation ===
+[PASS] stdev hand value (data) = 4.9466
+[PASS] stdev == sd() * sqrt((n-1)/n)
+[PASS] stdev of constant is 0
+
+=== Linear regression ===
+[PASS] linreg slope matches lm()
+[PASS] linreg intercept matches lm()
+[PASS] linreg predictions match fitted()
+[PASS] linreg offset 5 uses prices[(n-54):(n-5)]
+[PASS] perfect line recovered
+[PASS] linreg errors if length > n
+[PASS] linreg errors if offset >= length
+
+=== RSI ===
+[PASS] RSI first 14 values NA
+[PASS] RSI within [0, 100]
+[PASS] RSI = 100 on a rising series
+[PASS] RSI hand value at position 6 = 60
+[PASS] RSI matches TTR::RSI (Wilder)
+
+=== Stochastic RSI ===
+[PASS] StochRSI %K within [0, 1]
+[PASS] StochRSI lines same length as data
+[PASS] StochRSI %K matches TTR-based reference
+[PASS] StochRSI %D matches TTR-based reference
+
+=== Crossover / Crossunder ===
+[PASS] crossover example: only index 4 TRUE
+[PASS] crossunder example: no TRUE values
+[PASS] crossunder detects drop
+[PASS] crossover handles NA as FALSE
+[PASS] length mismatch errors
+
+==== 36 passed, 0 failed ====
